@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Página de Contato</title>
+</head>
+<body>
+
+    <!-- Cabeçalho com Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-button">
+                <img src="1279864510.png" alt="Button Image" />
+            </a>
+            <!-- Menu Hambúrguer -->
+            <div class="menu-hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <!-- Menu Cascata -->
+            <div id="nav-menu" class="nav-menu">
+                <a href="index.html">Início</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="contact-container">
+        <div class="contact-box">
+            <h1>Entre em Contato</h1>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por E.v.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
